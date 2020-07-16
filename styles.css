@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Lato', sans-serif;
+    max-width: 100%;   
+}
+
+body {
+    background-color: #eee;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 900;
+    
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+nav {
+    background-color:rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    padding: 8px 2rem;
+    justify-content: space-between;
+}
+
+nav figure img {
+    max-width: 50%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    
+    
+}
+
+nav ul li {
+    display: flex;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    
+    display: block;
+    padding: 0.8rem 1rem;
+    color: #000;
+    background-color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0 8px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+}
+
+/* Main top banner section*/
+
+.top {
+    height: 100vh;
+    background-image:linear-gradient(
+      rgba(255, 255,255, 0.5), 
+      rgba(100, 100, 100, 0.1)
+    ), url('./images/geekaboo-store-inside.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.top h1 {
+    color: #fff;
+    font-size: 8rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0 3rem;
+    border-radius: 10px;
+
+}
+
+.top img {
+    position: relative;
+    top: 160px;
+    left: 0;
+}
+
+/* Products section */
+
+.products {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 4px;
+    
+ 
+}
+
+.products h2 {
+    padding-top: 7rem;
+}
+
+.product-images {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+    justify-content: space-evenly;
+}
+.img-col {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 2rem;
+    
+
+}
+
+.img-col img {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 12px;
+    box-shadow: 5px 10px 8px #888888;
+    
+}
+
+/* team section */
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+  
+}
+
+hr {
+    border: dotted rgba(0, 0, 0, 0.2) 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 20px auto;
+}
+
+.team h2 {
+padding-top: 7rem;
+}
+
+.team-gallery {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.team-gallery .team-img {
+    
+    max-width: 20%;
+    
+}
+
+.team-img img {
+    border-radius: 50%;
+    
+    
+}
+
+figure {
+    text-align: center;
+    
+}
+
+figure h3 {
+    font-size: 1.5rem;
+}
+
+figure p {
+    font-size: 1.5rem;
+}
+
+/* Foooter section */
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 6rem;
+    font-size: 1.2rem;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+/* @ Screen size 800px */
+
+@media (max-width: 1200px){
+    
+    .img-col {
+        flex: 33.33%;
+        max-width: 33.33%;
+        padding: 0 2rem;
+        
+
+    }
+
+      .top h1 {
+    
+    font-size: 5rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem 3rem;
+    border-radius: 5px;
+
+}
+    nav ul li a {
+    
+    padding: 8px 18px;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 3px;
+    border-radius: 5px;
+    
+}
+
+    nav {
+    background-color:rgba(0, 0, 0, 0.5);
+    padding: 6px 0.5rem;
+    
+}
+footer {
+    
+    
+    height: 5rem;
+    font-size: 1.2rem;
+    align-content: center;
+    padding: 0 0.5rem;
+    justify-content: space-between;
+    
+
+}
+
+}
+
+@media (max-width: 800px){
+    .img-col {
+        flex: 50%;
+        max-width: 50%;
+        padding: 0 2rem;
+        
+
+    }
+    nav ul li a {
+    
+    padding: 2px 4px;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 3px;
+    border-radius: 2px;
+    
+}
+
+    nav {
+    background-color:rgba(0, 0, 0, 0.8);
+    padding: 6px 0.5rem;
+    
+}
+footer {
+    text-align: center;
+    justify-content: center;
+    height: 8rem;
+    font-size: 1rem;
+    align-content: space-between;
+    padding: 1.5rem 0.5rem;
+    
+
+}
+figure h3 {
+    font-size: 1rem;
+}
+
+figure p {
+    font-size: 1rem;
+}
+  
+}
+
+@media (max-width: 630px){
+    .img-col {
+        flex: 100%;
+        max-width: 100%;
+        padding: 0 auto;
+    }
+
+    .top h1 {
+    
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem 3rem;
+    border-radius: 5px;
+
+}
+
+    nav ul li a {
+    
+    padding: 2px 4px;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 3px;
+    border-radius: 2px;
+    
+}
+
+    nav {
+    background-color:rgba(0, 0, 0, 0.8);
+    padding: 6px 0.5rem;
+    
+}
+
+footer {
+    text-align: center;
+    justify-content: center;
+    height: 8rem;
+    font-size: 1rem;
+    align-content: space-between;
+    padding: 1.5rem 0.5rem;
+    
+
+}
+
+figure h3 {
+    font-size: 1rem;
+}
+
+figure p {
+    font-size: 1rem;
+}
+
+
+}
+
